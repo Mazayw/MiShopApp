@@ -1,0 +1,38 @@
+.circle {
+    position: absolute;
+    top: -7px;
+    left: -30px;
+    background: #FEFEFE;
+    border: 3.144px solid #F2692A;
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: auto;
+    height: auto;
+}
+
+.background {
+    margin: 50px;
+    position: relative;
+    width: 331px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background: #C5C6C6;
+}
+
+.describe {
+    position: absolute;
+    left: 43px;
+    width: 300px;
+    font-weight: 400;
+    font-size: 18.6662px;
+    color: #2B2A29;
+    line-height: 100%;
+}

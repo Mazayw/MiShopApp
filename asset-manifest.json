@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MiShopApp/static/css/main.5fbaad27.css",
+    "main.js": "/MiShopApp/static/js/main.b0459dd4.js",
+    "static/js/787.253d52c6.chunk.js": "/MiShopApp/static/js/787.253d52c6.chunk.js",
+    "index.html": "/MiShopApp/index.html",
+    "main.5fbaad27.css.map": "/MiShopApp/static/css/main.5fbaad27.css.map",
+    "main.b0459dd4.js.map": "/MiShopApp/static/js/main.b0459dd4.js.map",
+    "787.253d52c6.chunk.js.map": "/MiShopApp/static/js/787.253d52c6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5fbaad27.css",
+    "static/js/main.b0459dd4.js"
+  ]
+}

@@ -1,7 +1,7 @@
 {
 	"name": "mishop",
 	"version": "0.1.0",
-	"homepage": "https://Mazayw.github.io/MiShopApp",
+	
 	"private": true,
 	"dependencies": {
 		"@emotion/react": "^11.10.5",

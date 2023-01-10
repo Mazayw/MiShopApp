@@ -9,7 +9,7 @@
 .header {
     background: #F2692A;
     width: 210mm;
-    height: 29mm;
+    height: 31mm;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,8 +17,8 @@
 
 .title {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size: 50pt;
-    font-weight: 700;
+    font-size: 42pt;
+    font-weight: 400;
     color: #fff;
     line-height: 8mm;
     height: 10mm;
@@ -27,8 +27,12 @@
 .body {
     background-color: #fff;
     height: 100%;
+    width: 210mm;
     display: flex;
     flex-wrap: wrap;
+    padding: 5mm;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer {

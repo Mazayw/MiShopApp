@@ -1,7 +1,12 @@
+.card {
+    position: relative;
+    height: 16mm;
+    width: 97mm;
+}
+
 .circle {
     position: absolute;
-    top: -7px;
-    left: -30px;
+    top: -1px;
     background: #FEFEFE;
     border: 3.144px solid #F2692A;
     width: 16mm;
@@ -10,6 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .icon {
@@ -18,10 +24,10 @@
 }
 
 .background {
-    margin: 50px;
-    position: relative;
+    position: absolute;
+    left: 25px;
     width: 331px;
-    height: 50px;
+    height: 59px;
     display: flex;
     align-items: center;
     background: #C5C6C6;
@@ -29,8 +35,8 @@
 
 .describe {
     position: absolute;
-    left: 43px;
-    width: 300px;
+    left: 40px;
+    width: 293px;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-weight: 400;
     font-size: 18.6662px;

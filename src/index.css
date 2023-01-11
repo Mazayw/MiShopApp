@@ -1,39 +1,37 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 @font-face {
-    font-family: 'comic_sans_msregular';
-    src: url('./fonts/comicsansms3-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+	font-family: 'comic_sans_msregular';
+	src: url('./fonts/comicsansms3-webfont.woff2') format('woff2'),
+		url('./fonts/comicsansms3-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
-
-
-
 @font-face {
-    font-family: 'comic_sans_msbold';
-    src: url('./fonts/design.graffiti.comicsansmsgras-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+	font-family: 'comic_sans_msbold';
+	src: url('./fonts/design.graffiti.comicsansmsgras-webfont.woff2')
+			format('woff2'),
+		url('./fonts/design.graffiti.comicsansmsgras-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 body {
-  margin: 20px;
-  background-color: bisque;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 20px;
+	background-color: bisque;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
 }

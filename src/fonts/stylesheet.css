@@ -4,7 +4,8 @@
 
 @font-face {
     font-family: 'comic_sans_msregular';
-    src: url('comicsansms3-webfont.ttf') format('truetype');
+    src: url('comicsansms3-webfont.woff2') format('woff2'),
+         url('comicsansms3-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -15,7 +16,8 @@
 
 @font-face {
     font-family: 'comic_sans_msbold';
-    src: url('design.graffiti.comicsansmsgras-webfont.ttf') format('truetype');
+    src: url('design.graffiti.comicsansmsgras-webfont.woff2') format('woff2'),
+         url('design.graffiti.comicsansmsgras-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 

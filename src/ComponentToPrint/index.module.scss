@@ -31,8 +31,9 @@
     display: flex;
     flex-wrap: wrap;
     padding: 5mm;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    column-gap: 10px;
 }
 
 .footer {

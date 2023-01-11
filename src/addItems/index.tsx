@@ -26,6 +26,11 @@ export default function AddItems() {
 		setGlobalName(event.target.value);
 	};
 
+	const handleClearData = () => {
+		setGlobalName('');
+		setGlobalData([]);
+	};
+
 	const handleButtonPress = () => {
 		if (icon && text) {
 			const id = icon + text + Math.random();
@@ -34,7 +39,6 @@ export default function AddItems() {
 			setText('');
 			setIcon('');
 		}
-		console.log('click', globalData, icon, text);
 	};
 
 	return (
@@ -85,6 +89,14 @@ export default function AddItems() {
 					inputProps={{ maxLength: 20 }}
 				/>
 				<FormHelperText sx={{ mb: 3 }}>Enter name</FormHelperText>
+				<Button
+					variant='contained'
+					disableElevation
+					sx={{ mt: 2, mb: 2 }}
+					onClick={() => handleClearData()}
+				>
+					Clear all data
+				</Button>
 			</FormControl>
 		</div>
 	);

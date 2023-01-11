@@ -4,20 +4,9 @@
 
 @font-face {
     font-family: 'comic_sans_msregular';
-    src: url('comicsansms3-webfont.woff2') format('woff2'),
-         url('comicsansms3-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'comic_sans_msbold';
-    src: url('design.graffiti.comicsansmsgras-webfont.woff2') format('woff2'),
-         url('design.graffiti.comicsansmsgras-webfont.woff') format('woff');
+    src: url('comic_sans_ms-webfont.woff2') format('woff2'),
+         url('comic_sans_ms-webfont.woff') format('woff'),
+         url('comic_sans_ms-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 

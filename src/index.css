@@ -5,7 +5,7 @@
 }
 
 @font-face {
-	font-family: 'comic_sans_msregular';
+	font-family: 'Comic Sans MS';
 	src: url('./fonts/comicsansms3-webfont.woff2') format('woff2'),
 		url('./fonts/comicsansms3-webfont.woff') format('woff');
 	font-weight: normal;
@@ -13,7 +13,7 @@
 }
 
 @font-face {
-	font-family: 'comic_sans_msbold';
+	font-family: 'Comic Sans MS Bold';
 	src: url('./fonts/design.graffiti.comicsansmsgras-webfont.woff2')
 			format('woff2'),
 		url('./fonts/design.graffiti.comicsansmsgras-webfont.woff') format('woff');

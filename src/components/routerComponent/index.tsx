@@ -3,10 +3,8 @@ import {
 	Navigate,
 	RouterProvider,
 } from 'react-router-dom';
-import { Big } from '../../pages/big';
-import { Small } from '../../pages/small';
 
-function Router() {
+function RouterComponent() {
 	const router = createBrowserRouter([
 		{
 			path: '/',
@@ -14,15 +12,15 @@ function Router() {
 		},
 		{
 			path: '/big',
-			element: <Big />,
+			element: '',
 		},
 		{
 			path: '/small',
-			element: <Small />,
+			element: '',
 		},
 	]);
 
 	return <RouterProvider router={router} />;
 }
 
-export default Router;
+export default RouterComponent;

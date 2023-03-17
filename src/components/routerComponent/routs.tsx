@@ -1,6 +1,4 @@
 import { Navigate } from 'react-router-dom';
-import { Big } from '../../pages/big';
-import { Small } from '../../pages/small';
 
 export const routs = [
 	{
@@ -9,10 +7,10 @@ export const routs = [
 	},
 	{
 		path: '/big',
-		element: <Big />,
+		element: '',
 	},
 	{
 		path: '/small',
-		element: <Small />,
+		element: '',
 	},
 ];

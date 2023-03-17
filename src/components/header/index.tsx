@@ -38,7 +38,6 @@ export const Header = () => {
 					indicatorColor='secondary'
 					textColor='inherit'
 					centered
-					//					variant='fullWidth'
 				>
 					{menuItems.map((el) => (
 						<Tab

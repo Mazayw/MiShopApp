@@ -12,14 +12,3 @@ function App() {
 }
 
 export default App;
-
-/**
- * <Header />
- * <Routes>
-				{routs.map((el) => (
-					<Route path={el.path} element={el.element} key={el.path} />
-				))}
-			</Routes>
- * 
- * 
- */

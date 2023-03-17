@@ -40,6 +40,7 @@ export const TabsComponent = () => {
 					<Tab
 						label={el.name}
 						value={el.value}
+						sx={{ textTransform: 'none' }}
 						icon={
 							<div
 								style={{

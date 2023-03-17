@@ -46,14 +46,8 @@ export default function AddItems() {
 	return (
 		<div>
 			<FormControl sx={{ mt: 2, minWidth: 795 }}>
-				<InputLabel id='demo-simple-select-helper-label'>Icon</InputLabel>
-				<Select
-					labelId='demo-simple-select-helper-label'
-					id='demo-simple-select-helper'
-					value={icon}
-					label='Icon'
-					onChange={handleChangeIcon}
-				>
+				<InputLabel>Icon</InputLabel>
+				<Select value={icon} label='Icon' onChange={handleChangeIcon}>
 					{menuItems.map((el) => {
 						return (
 							<MenuItem value={el.path} key={el.name}>

@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './index.module.scss';
 import { IDesc } from '../../types';
 import DeleteIcon from '@mui/icons-material/Delete';

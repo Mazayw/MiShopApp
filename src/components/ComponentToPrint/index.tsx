@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './index.module.scss';
 import Item from '../item/index';
-import { useGlobalContext } from '../context/global-context';
+import { useGlobalContext } from '../../context/global-context';
 
 export const ComponentToPrint = React.forwardRef<HTMLDivElement>(
 	(props, ref) => {

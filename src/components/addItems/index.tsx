@@ -5,7 +5,7 @@ import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import { useGlobalContext } from '../context/global-context';
+import { useGlobalContext } from '../../context/global-context';
 import { useState } from 'react';
 
 export default function AddItems() {

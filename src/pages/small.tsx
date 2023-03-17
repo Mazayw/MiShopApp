@@ -31,7 +31,6 @@ export const Small = () => {
 	return (
 		<div>
 			2
-			<AddItems />
 			<ComponentToPrint ref={componentRef} />
 			<ReactToPrint
 				trigger={() => (

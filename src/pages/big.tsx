@@ -32,7 +32,6 @@ export const Big = () => {
 	return (
 		<div>
 			<ContextProvider>
-				<AddItems />
 				<ComponentToPrint ref={componentRef} />
 				<ReactToPrint
 					trigger={() => (

@@ -44,7 +44,13 @@ export default function AddItems() {
 	};
 
 	return (
-		<div>
+		<div
+			style={{
+				display: 'flex',
+				flexDirection: 'column',
+				alignItems: 'center',
+			}}
+		>
 			<FormControl sx={{ mt: 2, minWidth: 795 }}>
 				<InputLabel>Icon</InputLabel>
 				<Select value={icon} label='Icon' onChange={handleChangeIcon}>

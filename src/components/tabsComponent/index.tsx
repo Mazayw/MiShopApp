@@ -35,7 +35,14 @@ export const TabsComponent = () => {
 
 	return (
 		<>
-			<Tabs value={value} onChange={handleChange} sx={{ marginBottom: '20px' }}>
+			<Tabs
+				value={value}
+				onChange={handleChange}
+				centered
+				sx={{
+					marginBottom: '20px',
+				}}
+			>
 				{printItems.map((el) => (
 					<Tab
 						label={el.name}
@@ -68,10 +75,16 @@ export const TabsComponent = () => {
 				))}
 			</Tabs>
 
-			<div style={{ display: 'flex', flexDirection: 'column' }}>
-				<div style={{ display: 'inline-block' }} ref={componentRef}>
+			<div
+				style={{
+					display: 'flex',
+					flexDirection: 'column',
+					alignItems: 'center',
+				}}
+			>
+				<span style={{ display: 'flex' }} ref={componentRef}>
 					{printItems[value].component}
-				</div>
+				</span>
 				<span>
 					<ReactToPrint
 						trigger={() => (

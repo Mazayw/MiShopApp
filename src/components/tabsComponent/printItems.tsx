@@ -12,6 +12,6 @@ export const printItems = [
 		name: '100x180mm',
 		value: 1,
 		component: <ComponentToPrint100x180 />,
-		src: '/favicon.ico',
+		src: '/smallPrint.jpg',
 	},
 ];

@@ -9,7 +9,7 @@
 .header {
 	background: #f2692a;
 	width: 100mm;
-	height: 31mm;
+	height: 25mm;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -30,8 +30,8 @@
 	width: 100mm;
 	display: flex;
 	flex-direction: column;
-	padding: 5mm;
-	justify-content: center;
+	padding: 3mm;
+	justify-content: space-between;
 	align-items: center;
 }
 

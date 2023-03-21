@@ -36,7 +36,9 @@ export default function ItemSmall({ data }: { data: IDesc }) {
 				></img>
 			</div>
 			<div className={styles.background}>
-				<p className={styles.describe}>{data.text}</p>
+				<p className={styles.describe}>
+					{data.text && data.text?.length < 53 ? data.text : 'Too long name'}
+				</p>
 				{showButton && (
 					<IconButton
 						aria-label='delete'

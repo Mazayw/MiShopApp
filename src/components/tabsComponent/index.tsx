@@ -64,7 +64,8 @@ export const TabsComponent = () => {
 									src={el.src}
 									alt='icon'
 									style={{
-										width: '40px',
+										maxWidth: '40px',
+										maxHeight: '40px',
 									}}
 								/>
 							</div>

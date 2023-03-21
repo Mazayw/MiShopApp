@@ -6,13 +6,7 @@ import { useGlobalContext } from '../../context/global-context';
 export const ComponentToPrint100x180 = React.forwardRef<HTMLDivElement>(
 	(props, ref) => {
 		const { globalData, globalName } = useGlobalContext();
-		const item = {
-			icon: '120hz.svg',
-			text: 'string',
-			id: '120hz.svg',
-		};
-		const arr = new Array(8).fill(item);
-		//globalData
+
 		return (
 			<div ref={ref} className={styles.print}>
 				<div className={styles.header}>
@@ -21,7 +15,7 @@ export const ComponentToPrint100x180 = React.forwardRef<HTMLDivElement>(
 					</h1>
 				</div>
 				<div className={styles.body}>
-					{arr.map((el) => (
+					{globalData.map((el) => (
 						<ItemSmall data={el} key={el.id} />
 					))}
 				</div>

@@ -1,67 +1,65 @@
 .print {
-    width: 210mm;
-    height: 148mm;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+	width: 100mm;
+	height: 180mm;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .header {
-    background: #F2692A;
-    width: 210mm;
-    height: 31mm;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	background: #f2692a;
+	width: 100mm;
+	height: 31mm;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .title {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size: 42pt;
-    font-weight: 400;
-    color: #fff;
-    line-height: 8mm;
-    height: 10mm;
+	font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+	font-size: 32pt;
+	font-weight: 400;
+	color: #fff;
+	line-height: 8mm;
+	height: 10mm;
 }
 
 .body {
-    background-color: #fff;
-    height: 100%;
-    width: 210mm;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5mm;
-    justify-content: center;
-    align-items: center;
-    column-gap: 10px;
+	background-color: #fff;
+	height: 100%;
+	width: 100mm;
+	display: flex;
+	flex-direction: column;
+	padding: 5mm;
+	justify-content: center;
+	align-items: center;
 }
 
 .footer {
-    width: 210mm;
-    height: 33mm;
-    display: flex;
-    justify-content: center;
-    background: #F2692A;
-    align-items: center;
+	width: 100mm;
+	height: 33mm;
+	display: flex;
+	justify-content: center;
+	background: #f2692a;
+	align-items: center;
 }
 
 .logo {
-    width: 40mm;
-    height: 17mm;
+	width: 30mm;
+	height: auto;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 205mm;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 10px 5px;
 }
 
 .title-footer {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size: 35pt;
-    font-weight: 400;
-    color: #fff;
-    height: 14mm;
-    line-height: 10mm;
+	font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+	font-size: 18pt;
+	font-weight: 400;
+	color: #fff;
 }

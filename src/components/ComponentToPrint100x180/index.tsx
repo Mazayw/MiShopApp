@@ -1,20 +1,28 @@
 import React from 'react';
 import styles from './index.module.scss';
-import Item from '../item/index';
+import ItemSmall from '../itemSmall/index';
 import { useGlobalContext } from '../../context/global-context';
 
 export const ComponentToPrint100x180 = React.forwardRef<HTMLDivElement>(
 	(props, ref) => {
 		const { globalData, globalName } = useGlobalContext();
-
+		const item = {
+			icon: '120hz.svg',
+			text: 'string',
+			id: '120hz.svg',
+		};
+		const arr = new Array(8).fill(item);
+		//globalData
 		return (
 			<div ref={ref} className={styles.print}>
 				<div className={styles.header}>
-					<h1 className={styles.title}>{globalName}</h1>
+					<h1 className={styles.title}>
+						{globalName.length < 15 ? globalName : 'Too long name'}
+					</h1>
 				</div>
 				<div className={styles.body}>
-					{globalData.map((el) => (
-						<Item data={el} key={el.id} />
+					{arr.map((el) => (
+						<ItemSmall data={el} key={el.id} />
 					))}
 				</div>
 				<div className={styles.footer}>

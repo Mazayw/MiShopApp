@@ -1,0 +1,46 @@
+.card {
+	position: relative;
+	height: 14mm;
+	width: 94mm;
+	overflow: hidden;
+}
+
+.circle {
+	position: absolute;
+	top: 0px;
+	background: #fefefe;
+	border: 3.144px solid #f2692a;
+	width: 13mm;
+	height: 13mm;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+}
+
+.icon {
+	width: 35px;
+	height: 35px;
+}
+
+.background {
+	position: absolute;
+	left: 25px;
+	width: 100%;
+	height: 13mm;
+	display: flex;
+	align-items: center;
+	background: #c5c6c6;
+}
+
+.describe {
+	position: absolute;
+	left: 30px;
+	width: 78mm;
+	font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+	font-weight: 400;
+	font-size: 18.6662px;
+	color: #2b2a29;
+	line-height: 100%;
+}

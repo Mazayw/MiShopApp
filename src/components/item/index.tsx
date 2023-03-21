@@ -1,10 +1,9 @@
-import React from 'react';
 import styles from './index.module.scss';
-import { IDesc } from '../types';
+import { IDesc } from '../../types';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { IconButton } from '@mui/material';
 import { useState } from 'react';
-import { useGlobalContext } from '../context/global-context';
+import { useGlobalContext } from '../../context/global-context';
 
 export default function Item({ data }: { data: IDesc }) {
 	const { setGlobalData } = useGlobalContext();

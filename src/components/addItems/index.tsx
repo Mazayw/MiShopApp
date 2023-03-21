@@ -5,8 +5,10 @@ import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import { useGlobalContext } from '../context/global-context';
+import { useGlobalContext } from '../../context/global-context';
 import { useState } from 'react';
+import { menuItems } from './MenuItems';
+import { ListItemIcon } from '@mui/material';
 
 export default function AddItems() {
 	const [icon, setIcon] = useState('');
@@ -42,24 +44,34 @@ export default function AddItems() {
 	};
 
 	return (
-		<div>
+		<div
+			style={{
+				display: 'flex',
+				flexDirection: 'column',
+				alignItems: 'center',
+			}}
+		>
 			<FormControl sx={{ mt: 2, minWidth: 795 }}>
-				<InputLabel id='demo-simple-select-helper-label'>Icon</InputLabel>
-				<Select
-					labelId='demo-simple-select-helper-label'
-					id='demo-simple-select-helper'
-					value={icon}
-					label='Icon'
-					onChange={handleChangeIcon}
-				>
-					<MenuItem value={'120hz.svg'}>120hz</MenuItem>
-					<MenuItem value={'Amoled.svg'}>Amoled</MenuItem>
-					<MenuItem value={'Camera.svg'}>Camera</MenuItem>
-					<MenuItem value={'Cpu.svg'}>Cpu</MenuItem>
-					<MenuItem value={'FastCharge.svg'}>FastCharge</MenuItem>
-					<MenuItem value={'NFC.svg'}>NFC</MenuItem>
-					<MenuItem value={'Screen.svg'}>Screen</MenuItem>
-					<MenuItem value={'Battery.svg'}>Battery</MenuItem>
+				<InputLabel>Icon</InputLabel>
+				<Select value={icon} label='Icon' onChange={handleChangeIcon}>
+					{menuItems.map((el) => {
+						return (
+							<MenuItem value={el.path} key={el.name}>
+								<ListItemIcon>
+									<img
+										src={`/icons/${el.path}`}
+										alt={el.name}
+										style={{
+											marginRight: '10px',
+											width: '30px',
+											height: '30px',
+										}}
+									/>
+								</ListItemIcon>
+								{el.name}
+							</MenuItem>
+						);
+					})}
 				</Select>
 				<FormHelperText>Choose icon</FormHelperText>
 				<TextField

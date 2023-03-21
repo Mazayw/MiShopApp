@@ -1,0 +1,45 @@
+.card {
+	position: relative;
+	height: 16mm;
+	width: 97mm;
+}
+
+.circle {
+	position: absolute;
+	top: -1px;
+	background: #fefefe;
+	border: 3.144px solid #f2692a;
+	width: 16mm;
+	height: 16mm;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+}
+
+.icon {
+	width: 40px;
+	height: 40px;
+}
+
+.background {
+	position: absolute;
+	left: 25px;
+	width: 331px;
+	height: 59px;
+	display: flex;
+	align-items: center;
+	background: #c5c6c6;
+}
+
+.describe {
+	position: absolute;
+	left: 40px;
+	width: 293px;
+	font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+	font-weight: 400;
+	font-size: 18.6662px;
+	color: #2b2a29;
+	line-height: 100%;
+}

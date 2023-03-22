@@ -5,7 +5,16 @@ import { useGlobalContext } from '../../context/global-context';
 
 export const ComponentToPrint100x180 = React.forwardRef<HTMLDivElement>(
 	(props, ref) => {
-		const { globalData, globalName } = useGlobalContext();
+		const { globalData, globalName, globalPrice } = useGlobalContext();
+
+		const priceFormatter = (num: number) => {
+			let string = num.toString().split('').reverse().join('');
+
+			if (string.length > 3) {
+				string = [string.slice(0, 3), ' ', string.slice(3)].join('');
+			}
+			return string.split('').reverse().join('');
+		};
 
 		return (
 			<div ref={ref} className={styles.print}>
@@ -20,12 +29,15 @@ export const ComponentToPrint100x180 = React.forwardRef<HTMLDivElement>(
 					))}
 				</div>
 				<div className={styles.footer}>
-					<div className={styles['footer-content']}>
-						<img src='/logo.png' alt='logo' className={styles.logo} />
-						<h2 className={styles['title-footer']}>
-							простір розумних гаджетів
-						</h2>
-					</div>
+					<h3 className={styles['price-old']}>
+						{priceFormatter(globalPrice.oldPrice)}
+						<span className={styles['price-old__uah']}>грн</span>
+					</h3>
+
+					<h2 className={styles['price-new']}>
+						{priceFormatter(globalPrice.newPrice)}
+						<span className={styles['price-new__uah']}>грн</span>
+					</h2>
 				</div>
 			</div>
 		);

@@ -9,12 +9,19 @@ import { useGlobalContext } from '../../context/global-context';
 import { useState } from 'react';
 import { menuItems } from './MenuItems';
 import { ListItemIcon } from '@mui/material';
-
+//globalPrice, setGlobalPrice
+//oldPrice: number; 	newPrice:
 export default function AddItems() {
 	const [icon, setIcon] = useState('');
 	const [text, setText] = useState('');
-	const { globalData, setGlobalData, globalName, setGlobalName } =
-		useGlobalContext();
+	const {
+		globalData,
+		setGlobalData,
+		globalName,
+		setGlobalName,
+		globalPrice,
+		setGlobalPrice,
+	} = useGlobalContext();
 
 	const handleChangeIcon = (event: SelectChangeEvent) => {
 		setIcon(event.target.value);
@@ -24,6 +31,14 @@ export default function AddItems() {
 		setText(event.target.value);
 	};
 
+	const handleChangeOldPrice = (event: React.ChangeEvent<HTMLInputElement>) => {
+		setGlobalPrice({ ...globalPrice, oldPrice: Number(event.target.value) });
+	};
+
+	const handleChangeNewPrice = (event: React.ChangeEvent<HTMLInputElement>) => {
+		setGlobalPrice({ ...globalPrice, newPrice: Number(event.target.value) });
+	};
+
 	const handleChangeName = (event: React.ChangeEvent<HTMLInputElement>) => {
 		setGlobalName(event.target.value);
 	};
@@ -31,6 +46,7 @@ export default function AddItems() {
 	const handleClearData = () => {
 		setGlobalName('');
 		setGlobalData([]);
+		setGlobalPrice({ oldPrice: 0, newPrice: 0 });
 	};
 
 	const handleButtonPress = () => {
@@ -101,6 +117,21 @@ export default function AddItems() {
 					inputProps={{ maxLength: 20 }}
 				/>
 				<FormHelperText sx={{ mb: 3 }}>Enter name</FormHelperText>
+				<TextField
+					label='Old Price'
+					value={globalPrice.oldPrice}
+					onChange={handleChangeOldPrice}
+					sx={{ mt: 1 }}
+					inputProps={{ maxLength: 6, inputmode: 'numeric' }}
+				/>
+				<FormHelperText sx={{ mb: 3 }}>Enter old price</FormHelperText>
+				<TextField
+					label='New Price'
+					value={globalPrice.newPrice}
+					onChange={handleChangeNewPrice}
+					inputProps={{ maxLength: 6, inputmode: 'numeric' }}
+				/>
+				<FormHelperText sx={{ mb: 3 }}>Enter new price</FormHelperText>
 				<Button
 					variant='contained'
 					disableElevation

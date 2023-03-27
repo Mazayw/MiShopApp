@@ -29,12 +29,18 @@ export const ComponentToPrint100x180 = React.forwardRef<HTMLDivElement>(
 					))}
 				</div>
 				<div className={styles.footer}>
-					<h3 className={styles['price-old']}>
-						{priceFormatter(globalPrice.oldPrice)}
-						<span className={styles['price-old__uah']}>грн</span>
-					</h3>
+					{globalPrice.oldPrice !== 0 && (
+						<h3 className={styles['price-old']}>
+							{priceFormatter(globalPrice.oldPrice)}
+							<span className={styles['price-old__uah']}>грн</span>
+						</h3>
+					)}
 
-					<h2 className={styles['price-new']}>
+					<h2
+						className={`${styles['price-new']} ${
+							!globalPrice.oldPrice && styles['vertical-center']
+						}`}
+					>
 						{priceFormatter(globalPrice.newPrice)}
 						<span className={styles['price-new__uah']}>грн</span>
 					</h2>
